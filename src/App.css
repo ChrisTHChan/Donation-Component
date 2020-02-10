@@ -1,0 +1,163 @@
+.App {
+  text-align: center;
+  padding: 25px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.thought-bubble {
+  background-color: #424242;
+  width: 400px;
+  margin-bottom: 15px;
+  color: white;
+  height: 60px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  position: relative;
+}
+
+.thought-bubble:before {
+  content: '';
+  position: absolute; 
+  width: 0;
+  height: 0;
+  right: 30px;
+  top: 50px;
+  border: 10px solid;
+  border-color: #424242 transparent transparent #424242;
+}
+
+.thought-bubble .bold {
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 400px;
+  border-top: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.main-content {
+  width: 400px;
+  border: 1px solid #eaeaea;
+  height: 250px;
+  text-align: left;
+  padding: 25px;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+}
+
+.main-content .orange {
+  color: #EF5F3C;
+  font-weight: bold;
+}
+
+.main-content .grey {
+  color: #777;
+  font-weight: bold;
+}
+
+.main-content .button-input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.button-input-container .donation-input {
+  box-sizing: border-box;
+  margin-right: 10px;
+  height: 50px;
+  width: 165px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #eaeaea;
+  border-radius: 7px;
+}
+
+.button-input-container .donation-input:focus {
+  outline: none;
+}
+
+.button-input-container .donate-button {
+  height: 50px;
+  width: 165px;
+  border-radius: 7px;
+  border: none;
+  background-color: #1cbc2c;
+  color: white;
+  font-size: 18px;
+}
+
+.button-input-container .donate-button:hover {
+  text-decoration: underline;
+} 
+
+.button-input-container .donate-button-disabled {
+  height: 50px;
+  width: 165px;
+  border-radius: 7px;
+  border: none;
+  background-color: lightgrey;
+  color: grey;
+  font-size: 18px;
+}
+
+.button-input-container .donate-button:focus {
+  outline: none;
+}
+
+.main-content .explanation-link {
+  color: #20A1D4;
+  font-style: italic;
+}
+
+.main-content .explanation-link-invisible {
+  visibility: hidden;
+}
+
+.footer-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.footer-button-container .footer-button {
+  border: 1px solid #eaeaea;
+  color: #777;
+  font-weight: bold;
+  width: 187px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.footer-button:focus {
+  outline: none;
+}
+
+.footer-button:hover {
+  border: 1px solid #777;
+}
