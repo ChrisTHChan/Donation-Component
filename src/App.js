@@ -37,10 +37,13 @@ class App extends React.Component {
           <div><span className='bold'>${moneyLeft}</span> still needed for this project</div>
         </div>
         <div className='progress-bar'>
-          <div style={{
+          <div 
+          className='progress-bar-filling'
+          style={{
             width: `${(totalMoneyDonated/donationTargetValue)*100}%`,
             backgroundColor: '#EF5F3C',
             height: '20px',
+            transition: 'all 1s ease'
           }}>
           </div>
         </div>
@@ -56,8 +59,7 @@ class App extends React.Component {
             value={valueToBeDonated} 
             onChange={this.setDonationValue}/>
             <button 
-            className={`${valueToBeDonated === '' || 
-            moneyLeft === 0 ? 'donate-button-disabled' : 'donate-button'}`} 
+            className={`${valueToBeDonated === '' || moneyLeft === 0 ? 'donate-button-disabled' : 'donate-button'}`} 
             disabled={valueToBeDonated === '' || moneyLeft === 0 ? true : false} 
             onClick={this.handleDonateClick}>
               Give Now
